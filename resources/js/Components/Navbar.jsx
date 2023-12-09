@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className="md:flex py-4 md:px-10 px-7 justify-between items-center">
                 <div className="flex items-center">
                     <a href="">
-                        <span className="text-2xl font-bold">EEPROM</span>
+                        <span className="text-2xl font-bold">Nav</span>
                     </a>
                 </div>
                 <div
