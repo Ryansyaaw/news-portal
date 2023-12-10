@@ -5,7 +5,6 @@ import ArticleList from '@/Components/ArticleList';
 import Paginator from '@/Components/Paginator';
 
 export default function Homepage(props){
-    console.log('data home',props)
     return(
         <div className='bg-slate-100 min-h-screen'>
             <Head title={props.title}/>
