@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\ArticleCollection;
 use Illuminate\Http\Request;
 use App\Models\Article;
 use Inertia\Inertia;
@@ -13,7 +14,8 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $articles = Article::all();
+        $articles = new ArticleCollection(Article::paginate(9));
+        // dd($articles);
         return Inertia::render('Homepage', [
             'title' => 'react laravel',
             'article' => $articles,
